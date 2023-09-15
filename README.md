@@ -14,5 +14,10 @@ Customer.cs
 
 PhysicalProductModel.cs
 
-![PhysicalProduct](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/4ec87bb9-0e70-4b51-b5a4-6f0094b86ace)
+![NewPhysicalProduct](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/4f1d3762-e3df-418a-bf6c-36788e654917)
 
+- In Interface project:
+
+Program.cs
+
+![Program](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/7ea9d022-e821-401a-9c82-ade91fe7c374)
