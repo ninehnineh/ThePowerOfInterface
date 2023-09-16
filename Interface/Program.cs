@@ -6,10 +6,10 @@ namespace Interface
     {
         static void Main(string[] args)
         {
-            List<PhysicalProductModel> cart = AddSampleData();
+            List<IProductModel> cart = AddSampleData();
             CustomerModel customer = GetCustomer();
 
-            foreach (PhysicalProductModel prod in cart)
+            foreach (IProductModel prod in cart)
             {
                 prod.ShipItem(customer);
             }
@@ -29,13 +29,15 @@ namespace Interface
             };
         }
 
-        private static List<PhysicalProductModel> AddSampleData()
+        private static List<IProductModel> AddSampleData()
         {
-            List<PhysicalProductModel> output = new List<PhysicalProductModel>();
+            List<IProductModel> output = new List<IProductModel>();
 
             output.Add(new PhysicalProductModel { Title = "Sting" });
             output.Add(new PhysicalProductModel { Title = "RebBull" });
             output.Add(new PhysicalProductModel { Title = "NiveaMen" });
+            output.Add(new DigitalProductModel { Title = "C#.pdf" });
+            output.Add(new DigitalProductModel { Title = "Java.pdf" });
 
             return output;
         }

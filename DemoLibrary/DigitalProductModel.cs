@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public class PhysicalProductModel : IProductModel
+    public class DigitalProductModel : IProductModel
     {
         public string Title { get; set; }
 
         public void ShipItem(CustomerModel customer)
         {
-            Console.WriteLine($"Simulating shipping { Title } to { customer.FirstName }{ customer.LastName } in { customer.City }");
+            Console.WriteLine($"Simulating emailing {Title} to {customer.EmailAddress}");
         }
     }
 }
