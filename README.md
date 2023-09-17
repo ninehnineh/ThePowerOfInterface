@@ -48,8 +48,9 @@ Result of the program:
    ![image](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/117ca627-e103-4936-9856-18fad6c24e12)
 
 - Modify a $\textcolor{gray}{\textsf{Program}}$
-   - It is just a little change but solves all the Problems
-   
+   - To be able to solve all the problems, I just need to change the data type from $\textcolor{gray}{\textsf{PhysicalProductModel}}$ to $\textcolor{gray}{\textsf{IProductModel}}$ without changing the logic of the code.
+   - And one more thing is that I was able to add a digital product to the cart
+   - In the future, if our Customers need more types of products, the only thing we do is create a class that represents that type of product and let it implement our Interface and that's done 
      ![ProgramAfterChangeV2](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/ee75c54f-86d4-4de8-8476-3a917a78300d)
 
 - The final result:
