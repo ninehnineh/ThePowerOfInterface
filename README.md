@@ -61,5 +61,6 @@ Result of the program:
 - So after using an Interface, we can see some of the benefits of an Interface:
   - Scalability: Interfaces make our code base more scalable. It shows up when we assume a customer makes a new requirement for a digital product
   - Code Reuse: Let's remember how we achieve DRY principle by creating and implementing an $\textcolor{gray}{\textsf{IProductModel}}$
+  - loose coupling: In the first version of $\textcolor{gray}{\textsf{Program}}$, we can see Main method is depend on PhysicalProductModel, I mean this method only allows 1 type PhysicalProductModel. But with Interface, we can achieve a loose coupling
 - Interface has many more than 2 benefits, but in this demo, I think that is all I can understand.
 - To go into depth for knowledge of Interface, I am going to explore [the SOLID principles](https://github.com/ninehnineh/ThePowerOfInterface/edit/master/README.md)
