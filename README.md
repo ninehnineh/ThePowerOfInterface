@@ -1,8 +1,18 @@
-## The Power Of Interface
+# The Power Of Interface
+
+## Table of contents
+- [Overview](#Overview)
+- [Setup](#Setup)
+- [Problems](#Problems)
+- [Solution](#Solution)
+- [Conclusion](#Conclusion)
+
+  
+1, Overview
 - This repository helps me :blush: clarify the interface's robustness as well as its benefits
 - This repository will simulate an add-to-cart action of one specific Customer
-
-1, Set Up:
+  
+2, Setup:
 - We have 2 projects for this demo, DemoLibrary (class library) and Interface (Console):
  
   ![SolutionStructure](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/5e129f57-d1d0-461b-a846-c8ea3a06f480)
@@ -29,7 +39,7 @@ Result of the program:
   
   ![image](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/4ff62427-7ef5-44ee-b499-5199ef7699e4)
 
-2, Problems
+3, Problems
 - Let's say the above code works fine, but in the future, we may have more requirements like the Customer told the development team "I want to sell more products like digital products and it will be sent via the customer's email".
 - So we have not touched an interface yet, the solution that is coming to my mind is to create a $\textcolor{gray}{\textsf{DigitalProductModel}}$ and modify an existing code that is already working fine, this modified action is not recommended, it's a risk and takes time to do testing again to make sure it works as expected.
 - In this case, this function is standalone, it does not involve other use cases, but if it does, it means we need to retest all of them, which requires more effort to do that.
@@ -37,7 +47,7 @@ Result of the program:
   
     ![image](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/bfb3af44-9998-49f1-9b34-d0fb1b8da74b)
   
-3, Solution
+4, Solution
 - To solve these problems, we are going to use an Interface, adding and modifying some stuff to do it right.
 - Create an Interface named $\textcolor{gray}{\textsf{IProductModel}}$
 
@@ -57,7 +67,7 @@ Result of the program:
 
   ![image](https://github.com/ninehnineh/ThePowerOfInterface/assets/103179810/df22f66c-4a4e-441d-8114-1c475f176c3b)
 
-4, Conclusion
+5, Conclusion
 - So after using an Interface, we can see some of the benefits of an Interface:
   - Scalability: Interfaces make our code base more scalable. It shows up when we assume a customer makes a new requirement for a digital product
   - Code Reuse: Let's remember how we achieve DRY principle by creating and implementing an $\textcolor{gray}{\textsf{IProductModel}}$
